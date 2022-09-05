@@ -59,7 +59,7 @@ def echo(client, message):
         firebase.put('/stats', 'total_searches', data)
     global pq
     pq = ""
-    pro = client.send_message(chat_id=message.chat.id, text="Searching...", reply_to_message_id=message.message_id)
+    pro = client.send_message(chat_id=message.chat.id, text="Searching...",)
     r_num = message.text
     num = r_num.replace("+91", "").replace(" ", "")
     frbseyename = ""
